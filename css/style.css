@@ -3,7 +3,7 @@ div {
 }
 
 .index {
-	background-image: url(img/index-img.jpg);
+	background-image: url(../img/index-img.jpg);
 	background-size: cover;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -69,7 +69,7 @@ div {
 }
 
 .index-xs {
-	background-image: url(img/index-xs-head.jpg);
+	background-image: url(../img/index-xs-head.jpg);
 	background-size: cover;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -138,7 +138,7 @@ div {
 }
 
 .button-xs {
-	background-image: url(img/button-xs-frame.jpg);
+	background-image: url(../img/button-xs-frame.jpg);
 	background-size: 80%;
   	background-position: center;
   	background-repeat: no-repeat;
