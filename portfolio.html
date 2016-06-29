@@ -1,10 +1,11 @@
 <html>
 	<head>
 		<title>Portfolio | J. Wat</title>
-		
+
 		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="js/script.js"></script>
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -26,15 +27,10 @@
 				</div>
 			</div>
 			<!-- header for xs -->
-			<div class="visible-xs visible-sm hidden-md hidden-lg">
+			<div class="visible-xs visible-sm hidden-md hidden-lg mobile-head">
 				<div class="header-xs" style="background-image: url(img/header-xs.jpg);">
 					<a href="index.html"><div class="header-xs-home"></div></a>
-				</div>
-				<div class="menu-xs">
-					<div id="menu-xs-expand" style="position: absolute; bottom: 0; width: 100%">
-						<img src="img/header-xs-expand.jpg" style="width: 80%;"/>
-					</div>
-					<img src="img/header-xs-space.jpg" style="width: 39.63%;"/>
+					<div class="menu-xs"><img src="img/header-xs-expand.jpg" style="width: 80%;"/></div>
 				</div>
 				<div class="button-xs">
 					<div style="width:100%; height:8%;"></div>
@@ -84,12 +80,5 @@
 		<!-- end of container -->
 		</div>
 
-		<script>
-			$(document).ready(function(){
-				$("#menu-xs-expand").click(function(){
-					$(".button-xs").toggle();
-				});
-			});
-		</script>
 	</body>
 </html>

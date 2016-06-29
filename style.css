@@ -1,5 +1,5 @@
 div {
-	border: solid black 1px;
+	/*border: solid black 1px;*/
 }
 
 .index {
@@ -8,7 +8,7 @@ div {
 	background-position: center;
   	background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 71.52%;  /* (img-height 977/ img-width 1366) = 71.52%  */ 
+    padding-bottom: 71.52%;  /* (img-height 977/ img-width 1366) = 71.52%  */
     position: relative;
 }
 
@@ -74,7 +74,7 @@ div {
 	background-position: center;
   	background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 48.28%;  /* (img-height 412/ img-width 836) = 49.28%  */ 
+    padding-bottom: 48.28%;  /* (img-height 412/ img-width 836) = 49.28%  */
     position: relative;
 }
 
@@ -121,7 +121,7 @@ div {
   	background-position: center;
   	background-repeat: no-repeat;
     width: 100%;
-    padding-top: 30.31%;  /* (img-height 414/ img-width 1366) = 30.31%  */ 
+    padding-top: 30.31%;  /* (img-height 414/ img-width 1366) = 30.31%  */
     position: relative;
 }
 
@@ -213,7 +213,7 @@ div {
 }
 
 .contact-info-inner {
-	display: inline-block; 
+	display: inline-block;
 	text-align: left;
 }
 
