@@ -148,6 +148,10 @@ div {
 	position: relative;
 }
 
+.mobile-head {
+	position: relative;
+}
+
 .header-xs {
 	/*background-image: url(img/header-xs.jpg);*/
 	background-size: cover;
@@ -157,16 +161,13 @@ div {
     padding-top: 33.95%;  /* (img-height 257/ img-width 757) = 33.95%  */
     position: relative;
 }
+
 .header-xs-home {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 43%;
 	height: 60%;
-}
-
-.mobile-head {
-	position: relative;
 }
 
 .menu-xs {
@@ -177,10 +178,8 @@ div {
 	height: auto;
 }
 
-.menu-xs-expand{
-	position: absolute;
-	bottom: 0px;
-}
+
+
 
 #img {
 	width: 100%;
