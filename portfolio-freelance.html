@@ -72,32 +72,38 @@
 				function changeImage(){
 					switch(num) {
 					    case -1:
-					    		num = 2;
-					    		changeImage();
-					    		break;
+					    	num = 2;
+					    	changeImage();
+					    	break;
 					    case 0:
-					    		$("#left").attr("src","img/portfolio-arrow-left-black.jpg");
-					    		$("#right").attr("src","img/portfolio-arrow-right.jpg");
-					    		$("#num").attr("src","img/freenum01.jpg");
-					      	$("#img").fadeTo("slow", 0);
-    							$("#img").attr("src","img/free01.jpg");
-									$("#img").fadeTo("slow",1);
+					  		$("#left").attr("src","img/portfolio-arrow-left-black.jpg");
+					    	$("#right").attr("src","img/portfolio-arrow-right.jpg");
+					    	$("#num").attr("src","img/freenum01.jpg");
+					      	$("#img").fadeTo("slow", 0, function() {
+    							$(this).attr("src","img/free01.jpg",function(){
+    								$(this).fadeTo("slow",1);	
+    							});
+  							});
 					        break;
 					    case 1:
 					    	$("#left").attr("src","img/portfolio-arrow-left.jpg");
 					    	$("#right").attr("src","img/portfolio-arrow-right.jpg");
 					    	$("#num").attr("src","img/freenum02.jpg");
-								$("#img").fadeTo("slow", 0);
-								$("#img").attr("src","img/free02.jpg");
-								$("#img").fadeTo("slow",1);
+					      	$("#img").fadeTo("slow", 0, function() {
+    							$(this).attr("src","img/free02.jpg",function(){
+    								$(this).fadeTo("slow",1);	
+    							});
+  							});
 					        break;
 					    case 2:
 					    	$("#left").attr("src","img/portfolio-arrow-left.jpg");
 					    	$("#right").attr("src","img/portfolio-arrow-right-black.jpg");
 					    	$("#num").attr("src","img/freenum03.jpg");
-								$("#img").fadeTo("slow", 0);
-								$("#img").attr("src","img/free03.jpg");
-								$("#img").fadeTo("slow",1);
+					    	$("#img").fadeTo("slow", 0, function() {
+    							$(this).attr("src","img/free03.jpg",function(){
+    								$(this).fadeTo("slow",1);	
+    							});
+  							});
 					    	break;
 					    case 3:
 					    	num = 0
