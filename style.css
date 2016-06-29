@@ -177,9 +177,10 @@ div {
 	height: auto;
 }
 
-/*.menu-xs-expand{
+.menu-xs-expand{
 	position: absolute;
-}*/
+	bottom: 0px;
+}
 
 #img {
 	width: 100%;
