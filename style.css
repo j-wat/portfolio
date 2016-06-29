@@ -165,13 +165,21 @@ div {
 	height: 60%;
 }
 
+.mobile-head {
+	position: relative;
+}
+
 .menu-xs {
 	position: absolute;
-	top: 0px;
+	top: 0%;
 	left: 80%;
 	width: 20%;
 	height: auto;
 }
+
+/*.menu-xs-expand{
+	position: absolute;
+}*/
 
 #img {
 	width: 100%;
