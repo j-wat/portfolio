@@ -55,10 +55,10 @@ $(function(){
 		if (num == count-2) {
 			$("#right").attr("src","img/portfolio-arrow-right.jpg");
 		}
-		$("#img").fadeTo("fast", 0, function() {
-			$(this).attr("src",imgArray[num]).fadeTo("fast",1);
+		$("#img").fadeTo("slow", 0, function() {
+			$(this).attr("src",imgArray[num]).fadeTo("slow",1);
 		});
-		$("#num").attr("src",imgnumArray[num]).fadeTo("fast",1);
+		$("#num").attr("src",imgnumArray[num]).fadeTo("slow",1);
 	}
 	window.leftClick=leftClick;
 
@@ -75,10 +75,10 @@ $(function(){
 			$("#right").attr("src","img/portfolio-arrow-right.jpg");
 			$("#left").attr("src","img/portfolio-arrow-left-black.jpg");	
 		}
-		$("#img").fadeTo("fast", 0, function() {
-			$(this).attr("src",imgArray[num]).fadeTo("fast",1);
+		$("#img").fadeTo("slow", 0, function() {
+			$(this).attr("src",imgArray[num]).fadeTo("slow",1);
 		});
-		$("#num").attr("src",imgnumArray[num]).fadeTo("fast",1);
+		$("#num").attr("src",imgnumArray[num]).fadeTo("slow",1);
 	}
 	window.rightClick=rightClick;
 });
