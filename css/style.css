@@ -125,6 +125,15 @@ div {
     position: relative;
 }
 
+.head-md-lg-home {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 17%;
+	height: 25%;
+}
+
+
 .button-md-lg {
 	position: absolute;
 	top: 18%;
