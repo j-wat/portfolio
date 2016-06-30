@@ -75,4 +75,11 @@ $(function(){
 		$("#num").attr("src",imgnumArray[num]).fadeTo("slow",1);
 	}
 	window.rightClick=rightClick;
+
+	function preload() {
+	    $(imgArray).each(function(){
+	        (new Image()).src = this;
+    	});
+	}
+	window.preload=preload;
 });
