@@ -51,10 +51,10 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" style="text-align: center;">
 				<img src="img/portfolio-arrow-left-black.jpg" id="left" style="width:8%"/>
-				<img src="img/free01.jpg" id="img" style="width:80%"/>
+				<img src="img/free1.jpg" id="img" style="width:80%"/>
 				<img src="img/portfolio-arrow-right.jpg" id="right"style="width:8%"/>
 				<br/>
-				<img src="img/freenum01.jpg" id="num" style="width:13%"/>
+				<img src="img/freenum1.jpg" id="num" style="width:13%"/>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center;">
 				<img src="img/portfolio-img.jpg" style="width: 70%"/>
@@ -67,55 +67,16 @@
 
 		<script>
 			$(document).ready(function(){
-				var num = 0;
-
-				function changeImage(){
-					switch(num) {
-					    case -1:
-					    	num = 2;
-					    	changeImage();
-					    	break;
-					    case 0:
-					  		$("#left").attr("src","img/portfolio-arrow-left-black.jpg");
-					    	$("#right").attr("src","img/portfolio-arrow-right.jpg");
-					    	$("#num").attr("src","img/freenum01.jpg");
-					      	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/free01.jpg").fadeTo("slow",1);
-  							});
-					        break;
-					    case 1:
-					    	$("#left").attr("src","img/portfolio-arrow-left.jpg");
-					    	$("#right").attr("src","img/portfolio-arrow-right.jpg");
-					    	$("#num").attr("src","img/freenum02.jpg");
-					      	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/free02.jpg").fadeTo("slow",1);
-  							});
-					        break;
-					    case 2:
-					    	$("#left").attr("src","img/portfolio-arrow-left.jpg");
-					    	$("#right").attr("src","img/portfolio-arrow-right-black.jpg");
-					    	$("#num").attr("src","img/freenum03.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/free03.jpg").fadeTo("slow",1);
-  							});
-					    	break;
-					    case 3:
-					    	num = 0
-					    	changeImage();
-					    	break;
-					    default:
-					    	num = 0;
-					}
-				}
+				var count = 3;
+				var name = "free";
+				initialImgArray(name, count);
 
 				$("#left").click(function(){
-					num--;
-					changeImage();
+					leftClick(count);
 				});
 
 				$("#right").click(function(){
-					num++;
-					changeImage();
+					rightClick(count);
 				});
 			});
 		</script>

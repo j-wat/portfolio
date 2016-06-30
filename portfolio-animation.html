@@ -51,10 +51,10 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" style="text-align: center;">
 				<img src="img/portfolio-arrow-left-black.jpg" id="left" style="width:8%"/>
-				<img src="img/ad01.jpg" id="img" style="width:80%"/>
+				<img src="img/ad1.jpg" id="img" style="width:80%"/>
 				<img src="img/portfolio-arrow-right.jpg" id="right"style="width:8%"/>
 				<br/>
-				<img src="img/adnum01.jpg" id="num" style="width: 15%;"/>
+				<img src="img/adnum1.jpg" id="num" style="width: 15%;"/>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center;">
 				<img src="img/portfolio-img.jpg" style="width: 70%"/>
@@ -67,97 +67,16 @@
 
 		<script>
 			$(document).ready(function(){
-				var num = 0;
-
-				function changeImage(){
-					switch(num) {
-					    case -1:
-					    	num = 9;
-					    	changeImage();
-					    	break;
-					    case 0:
-					    	$("#left").attr("src","img/portfolio-arrow-left-black.jpg");
-					    	$("#right").attr("src","img/portfolio-arrow-right.jpg");
-					    	$("#num").attr("src","img/adnum01.jpg");
-					        $("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad01.jpg").fadeTo("slow", 1);
-  							});
-					        break;
-					    case 1:
-					    	$("#left").attr("src","img/portfolio-arrow-left.jpg");
-					    	$("#num").attr("src","img/adnum02.jpg");
-					       	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad02.jpg").fadeTo("slow", 1);
-  							});
-					        break;
-					    case 2:
-					    	$("#num").attr("src","img/adnum03.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad03.jpg").fadeTo("slow", 1);
-  							});
-					    	break;
-					    case 3:
-					    	$("#num").attr("src","img/adnum04.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad04.jpg").fadeTo("slow", 1);
-  							});
-					    	break;
-					    case 4:
-					    	$("#num").attr("src","img/adnum05.jpg");
-					       	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad05.jpg").fadeTo("slow", 1);
-  							});
-					        break;
-					    case 5:
-					    	$("#num").attr("src","img/adnum06.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad06.jpg").fadeTo("slow", 1);
-  							});
-					    	break;
-					    case 6:
-					    	$("#num").attr("src","img/adnum07.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad07.jpg").fadeTo("slow", 1);
-  							});
-					    	break;
-					    case 7:
-					    	$("#num").attr("src","img/adnum08.jpg");
-					       	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad08.jpg").fadeTo("slow", 1);
-  							});
-					        break;
-					    case 8:
-					    	$("#right").attr("src","img/portfolio-arrow-right.jpg");
-					    	$("#num").attr("src","img/adnum09.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad09.jpg").fadeTo("slow", 1);
-  							});
-					    	break;
-					    case 9:
-					    	$("#left").attr("src","img/portfolio-arrow-left.jpg");
-					    	$("#right").attr("src","img/portfolio-arrow-right-black.jpg");
-					    	$("#num").attr("src","img/adnum10.jpg");
-					    	$("#img").fadeTo("slow", 0, function() {
-    							$(this).attr("src","img/ad10.jpg").fadeTo("slow", 1);
-  							});
-					    	break;
-					    case 10:
-					    	num = 0
-					    	changeImage();
-					    	break;
-					    default:
-					    	num = 0;
-					}
-				}
+				var count = 10;
+				var name = "ad";
+				initialImgArray(name, count);
 
 				$("#left").click(function(){
-					num--;
-					changeImage();
+					leftClick(count);
 				});
 
 				$("#right").click(function(){
-					num++;
-					changeImage();
+					rightClick(count);
 				});
 			});
 		</script>
