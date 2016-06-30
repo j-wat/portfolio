@@ -24,6 +24,12 @@ $(function(){
 			imgArray[i-1] = "img/" + name + i + ".jpg";
 			imgnumArray[i-1] = "img/" + name + "num" + i +".jpg";
 		}
+		$(imgArray).each(function(){
+	        (new Image()).src = this;
+    	});
+    	$(imgnumArray).each(function(){
+	        (new Image()).src = this;
+    	});
 	}
 	window.initialImgArray=initialImgArray;
 
@@ -75,11 +81,4 @@ $(function(){
 		$("#num").attr("src",imgnumArray[num]).fadeTo("slow",1);
 	}
 	window.rightClick=rightClick;
-
-	function preload() {
-	    $(imgArray).each(function(){
-	        (new Image()).src = this;
-    	});
-	}
-	window.preload=preload;
 });
