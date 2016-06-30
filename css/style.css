@@ -2,6 +2,10 @@ div {
 	/*border: solid black 1px;*/
 }
 
+body {
+	display: none;
+}
+
 .index {
 	background-image: url(../img/index-img.jpg);
 	background-size: cover;
