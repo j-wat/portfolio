@@ -1,16 +1,18 @@
-<html>
+<html ng-app="portfolio">
 	<head>
 		<title>Portfolio | J. Wat</title>
 		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> -->
 		<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-1.10.2.js"></script>
-		<script src="js/script.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script src="js/script.js"></script>
 	</head>
-	<body>
+	<body ng-controller="PortfolioController as portfolio">
 		<!-- container -->
 		<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
 		</div>
@@ -48,29 +50,8 @@
 			<div class="col-xs-12 col-sm-12 hidden-md hidden-lg" style="text-align: center;">
 				<img src="img/portfolio-title.jpg" style="width: 70%"/>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="hidden-xs hidden-sm col-md-1 col-lg-1">
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-					<a href="portfolio-animation.html"><img src="img/portfolio-01.jpg" style="width: 100%"/></a>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-					<a href="portfolio-illustration.html"><img src="img/portfolio-02.jpg" style="width: 100%"/></a>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="hidden-xs hidden-sm col-md-1 col-lg-1">
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-					<a href="portfolio-showreel.html"><img src="img/portfolio-03.jpg" style="width: 100%"/></a>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-					<a href="portfolio-freelance.html"><img src="img/portfolio-04.jpg" style="width: 100%"/></a>
-				</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 portfolio-pages" ng-repeat="page in portfolio.pages">
+		        <a href="{{page.linksrc}}"><img src="{{page.imgsrc}}"/></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center;">
 				<img src="img/portfolio-img.jpg" style="width: 70%"/>
@@ -78,6 +59,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: right; padding-right:10%">
 				<img src="img/copyright.jpg"/>
 			</div>
+			
 
 		<!-- end of container -->
 		</div>

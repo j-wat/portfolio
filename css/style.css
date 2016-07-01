@@ -187,8 +187,9 @@ div {
 	height: auto;
 }
 
-
-
+.portfolio-pages img{
+	width: 100%;
+}
 
 #img {
 	width: 100%;
