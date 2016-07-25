@@ -2,6 +2,112 @@ div {
 	/*border: solid black 1px;*/
 }
 
+.youtubeFrame {
+	border: solid white 1px;	
+}
+
+/* header md lg*/
+.header-md-lg {
+	background-image: url(../img/header-md-lg.jpg);
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 30.31%;  /* (img-height 414/ img-width 1366) = 30.31%  */
+    position: relative;
+}
+
+.head-md-lg-home {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 17%;
+	height: 25%;
+}
+
+.button-md-lg {
+	position: absolute;
+	top: 22%;
+	left: 45%;
+	width: 55%;
+	height: 25%;
+}
+.head-title {
+	position: absolute;
+	top: 55%;
+	left: 10%;
+	width: 80%;
+	height: 43%;
+}
+
+.head-title img {
+	width: 100%;
+}
+
+/*header xs*/
+
+.button-xs {
+	background-image: url(../img/button-xs-frame.jpg);
+	background-size: 80%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+	position: relative;
+}
+
+.mobile-head {
+	position: relative;
+}
+
+.header-xs {
+	/*background-image: url(img/header-xs.jpg);*/
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 33.95%;  /* (img-height 257/ img-width 757) = 33.95%  */
+    position: relative;
+}
+
+.header-xs-home {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 43%;
+	height: 60%;
+}
+
+.menu-xs {
+	position: absolute;
+	top: 20%;
+	left: 80%;
+	width: 20%;
+	height: auto;
+}
+
+.copyright {
+	text-align: right; padding-right:10%
+}
+
+/* tabs */
+.t1 {
+	width: 12.69%;
+}
+
+.t2 {
+	width: 19.74%;
+}
+
+.t3 {
+	width: 25.38%;
+}
+
+.t4 {
+	width: 22.18%;
+}
+
+/*homepage*/
 .index {
 	background-image: url(../img/index-img.jpg);
 	background-size: cover;
@@ -115,91 +221,24 @@ div {
 	margin-top: 20%;
 }
 
-.header-md-lg {
-	/*background-image: url(img/header-md-lg.jpg);*/
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 30.31%;  /* (img-height 414/ img-width 1366) = 30.31%  */
-    position: relative;
-}
-
-.head-md-lg-home {
-	position: absolute;
-	top: 20%;
-	left: 10%;
-	width: 17%;
-	height: 25%;
-}
-
-
-.button-md-lg {
-	position: absolute;
-	top: 18%;
-	left: 45%;
-	width: 55%;
-	height: auto;
-}
-
-.button-md-lg img {
-	margin-right: 3%;
-}
-
-.button-xs {
-	background-image: url(../img/button-xs-frame.jpg);
-	background-size: 80%;
-  	background-position: center;
-  	background-repeat: no-repeat;
-    width: 100%;
-    text-align: center;
-	display: none;
-	position: relative;
-}
-
-.mobile-head {
-	position: relative;
-}
-
-.header-xs {
-	/*background-image: url(img/header-xs.jpg);*/
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 33.95%;  /* (img-height 257/ img-width 757) = 33.95%  */
-    position: relative;
-}
-
-.header-xs-home {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 43%;
-	height: 60%;
-}
-
-.menu-xs {
-	position: absolute;
-	top: 20%;
-	left: 80%;
-	width: 20%;
-	height: auto;
-}
-
+/* portfolio */
 .portfolio-pages img{
 	width: 100%;
 }
 
-#img {
-	width: 100%;
+.left {
+	width: 8%;
 }
 
-.container {
-	width: 100%;
-	position: relative;
+.right {
+	width: 8%;
 }
 
+#portimg {
+	width: 80%;
+}
+
+/*contact*/
 .contact-info-md-lg {
 	position: absolute;
 	top: 10%;
@@ -207,26 +246,38 @@ div {
 	width: 60%;
     background: #F3F3F3;
    	border-radius: 50%;
-   	padding-top: 5%;
-   	padding-left: 7%;
-   	padding-right: 7%;
-   	text-align: center;
+   	padding-top: 30%;
+}
+
+.contact-info-inner-md-lg {
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	width: 60%;
+	padding-top: 5%;
+   	padding-left: 6%;
+   	padding-right: 6%;
 }
 
 .contact-info-xs {
+	position: relative;
     background: #F3F3F3;
    	border-radius: 50%;
-   	padding-top: 8%;
-   	padding-left: 5%;
-   	padding-right: 5%;
    	text-align: center;
-}
-
-.contact-info-inner {
-	display: inline-block;
-	text-align: left;
+   	padding-top: 60%;
+   	width: 100%;
 }
 
 .contact-info-inner-xs {
-	width: 90%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	padding-top: 13%;
+   	padding-left: 9%;
+   	padding-right: 9%;
 }
+
