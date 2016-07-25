@@ -106,6 +106,7 @@
         this.resetImgNo = function(index) {
             this.imgno = 0;
             this.portIndex = index;
+            (new Image()).src = this.pages[index].title;
             for (i=0; i<this.pages[index].count; i++){
                 (new Image()).src = this.pages[index].imgArray[i];
                 (new Image()).src = this.pages[index].imgnumArray[i];
