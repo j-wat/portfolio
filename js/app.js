@@ -6,7 +6,6 @@
             { 
                 name: "ad",
                 title: "",
-                linksrc: "portfolio-animation.html",
                 imgsrc: "img/portfolio-01.jpg",
                 slider: true,
                 count: 10,
@@ -18,7 +17,6 @@
             { 
                 name: "illu",
                 title: "",
-                linksrc: "portfolio-illustration.html",
                 imgsrc: "img/portfolio-02.jpg",
                 slider: true,
                 count: 25,
@@ -30,10 +28,11 @@
             { 
                 name: "showreel",
                 title: "",
-                linksrc: "portfolio-showreel.html",
                 imgsrc: "img/portfolio-03.jpg",
                 slider: false,
                 count: 0,
+                imgArray: [],
+                imgnumArray: [],
                 youtube: true,
                 youtubesrc: "LSJI8RNI9Ps",
             },
@@ -41,7 +40,6 @@
                 
                 name: "free",
                 title: "",
-                linksrc: "portfolio-freelance.html",
                 imgsrc: "img/portfolio-04.jpg",
                 slider: true,
                 count: 3,
