@@ -19,7 +19,7 @@
                 title: "",
                 imgsrc: "img/portfolio-02.jpg",
                 slider: true,
-                count: 25,
+                count: 5,
                 imgArray: [],
                 imgnumArray: [],
                 youtube: false,
