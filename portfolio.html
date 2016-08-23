@@ -16,8 +16,8 @@
 					<img src="{{ portfolio.pages[portfolio.getPortIndex()].imgArray[portfolio.getImgNo()] }}" id="portimg" />
 					<img ng-hide="portfolio.rightBlack()" ng-click="portfolio.increment()" src="img/portfolio-arrow-right.jpg" class="right"/>
 					<img ng-show="portfolio.rightBlack()" ng-click="portfolio.increment()" src="img/portfolio-arrow-right-black.jpg" class="right"/>
-					<br/>
-					<img src="{{ portfolio.pages[portfolio.getPortIndex()].imgnumArray[portfolio.getImgNo()] }}" id="num" style="width:13%"/>
+					<!-- <br/> -->
+					<!-- <img src="{{ portfolio.pages[portfolio.getPortIndex()].imgnumArray[portfolio.getImgNo()] }}" id="num" style="width:13%"/> -->
 				</div>
 				<div ng-show="portfolio.youtubeAct(portfolio.getPortIndex())">
 					<div class="embed-responsive embed-responsive-16by9 youtubeFrame">
