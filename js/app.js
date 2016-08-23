@@ -4,7 +4,7 @@
 
     app.value('portfoInfo',[
             { 
-                name: "ad",
+                name: "da",
                 title: "",
                 imgsrc: "img/portfolio-01.jpg",
                 slider: true,
@@ -47,7 +47,7 @@
                 imgnumArray: [],
                 youtube: false,
                 youtubesrc: "",
-            }
+            },
         ]);
 
     app.controller('TabController', [ '$window', function($window){
