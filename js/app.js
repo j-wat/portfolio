@@ -42,7 +42,7 @@
                 title: "",
                 imgsrc: "img/portfolio-04.jpg",
                 slider: true,
-                count: 11,
+                count: 12,
                 imgArray: [],
                 imgnumArray: [],
                 youtube: false,
