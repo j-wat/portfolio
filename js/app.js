@@ -8,7 +8,7 @@
                 title: "",
                 imgsrc: "img/portfolio-01.jpg",
                 slider: true,
-                count: 10,
+                count: 14,
                 imgArray: [],
                 imgnumArray: [],
                 youtube: false,
