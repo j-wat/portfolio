@@ -87,7 +87,12 @@ div {
 }
 
 .copyright {
-	text-align: right; padding-right:10%
+	text-align: right; 
+	padding-right:10%;
+}
+
+.copyright img {
+	width: 100%; 
 }
 
 /* tabs */
@@ -131,7 +136,7 @@ div {
 	width: 9%;
 	height: 7%;
 	top: 40%;
-	left: 52%;
+	left: 51%;
 }
 
 .index-portfolio {
@@ -139,7 +144,7 @@ div {
 	width: 11%;
 	height: 7%;
 	top: 40%;
-	left: 65%;
+	left: 64%;
 }
 
 .index-contact {
@@ -147,14 +152,14 @@ div {
 	width: 11%;
 	height: 7%;
 	top: 39%;
-	left: 80%;
+	left: 78%;
 }
 
 .index-contact-email {
 	position: absolute;
 	width: 6%;
 	height: 7%;
-	top: 83%;
+	top: 80%;
 	left: 53%;
 }
 
@@ -162,7 +167,7 @@ div {
 	position: absolute;
 	width: 6%;
 	height: 7%;
-	top: 83%;
+	top: 80%;
 	left: 60%;
 }
 
@@ -170,7 +175,7 @@ div {
 	position: absolute;
 	width: 6%;
 	height: 7%;
-	top: 83%;
+	top: 80%;
 	left: 67%;
 }
 
