@@ -34,7 +34,7 @@
                 imgArray: [],
                 imgnumArray: [],
                 youtube: true,
-                youtubesrc: "Sbg-mNKD3rg",
+                youtubesrc: "=NVtf41TuFM8",
             },
             { 
                 
