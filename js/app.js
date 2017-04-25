@@ -34,7 +34,7 @@
                 imgArray: [],
                 imgnumArray: [],
                 youtube: true,
-                youtubesrc: "PjQ_RC0gsxQ&feature=youtu.be",
+                youtubesrc: "PjQ_RC0gsxQ",
             },
             { 
                 
